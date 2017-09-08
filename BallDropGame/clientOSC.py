@@ -2,7 +2,7 @@
 # Telnet Client + OSC Server
 #
 # Raspberry client for the BallDropGame assignment
-# Using data from an iOS gyroscope using the gyrOSC app
+# Using data from an iOS gyroscope running the gyrOSC app
 # Using python3
 # Understanding Networks Fall 2017 NYU ITP
 # C.Valenzuela
