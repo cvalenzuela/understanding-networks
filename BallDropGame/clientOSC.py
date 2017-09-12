@@ -23,26 +23,45 @@ SERVER_IP = "172.22.151.123"
 SERVER_PORT = "8080"
 
 # Local Host for OSC
-LOCAL_IP = "172.16.217.150"
+LOCAL_IP = "172.16.221.14"
 LOCAL_HOST = "5005"
 
 def gyro_results(unused_addr, args, x, y, z):
     """Handle gyroscope x,y,z position"""
-    millis = int(str(int(round(time.time() * 1000)))[10:11])
-
-    if millis == 3:
-        if x > 0.1:
+    millis = int(str(int(round(time.time() * 1000)))[11:12])
+    print(millis)
+    
+    if millis%2 == 0:
+        if x > 0.2:
             print("Right")
             TN.write(("r\n").encode('ascii'))
-        elif x < -0.1:
+
+        elif x < -0.2:
             print("Left")
             TN.write(("l\n").encode('ascii'))
-        if y < -0.1:
-            print("Up")
-            TN.write(("u\n").encode('ascii'))
-        elif y > 0.1:
-            print("Down")
-            TN.write(("d\n").encode('ascii'))
+
+    if y < -0.2:
+        print("Up")
+        TN.write(("u\n").encode('ascii'))
+
+    elif y > 0.2:
+        print("Down")
+        TN.write(("d\n").encode('ascii'))
+
+    # if millis == 1:
+    #     print(millis)
+    #     if x > 0.2:
+    #         print("Right")
+    #         TN.write(("r\n").encode('ascii'))
+    #     elif x < -0.2:
+    #         print("Left")
+    #         TN.write(("l\n").encode('ascii'))
+    #     if y < -0.2:
+    #         print("Up")
+    #         TN.write(("u\n").encode('ascii'))
+    #     elif y > 0.2:
+    #         print("Down")
+    #         TN.write(("d\n").encode('ascii'))
     
 def exit_gracefully(signum, frame):
     """Handle program exit and close telnet connection"""
