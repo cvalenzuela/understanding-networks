@@ -19,11 +19,11 @@ from pythonosc import dispatcher
 from pythonosc import osc_server
 
 # Game Host
-SERVER_IP = "172.22.151.123"
+SERVER_IP = "172.16.227.144"
 SERVER_PORT = "8080"
 
 # Local Host for OSC
-LOCAL_IP = "172.16.221.14"
+LOCAL_IP = "172.16.221.233"
 LOCAL_HOST = "5005"
 
 def gyro_results(unused_addr, args, x, y, z):
