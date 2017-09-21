@@ -3,7 +3,7 @@
 A node application to visualize the traceroute (hops and connections) of your complete browser history.
 Currently supports Chrome.
 
-![demo](/demo.png)
+![demo](demo.png)
 
 Run it:
 
