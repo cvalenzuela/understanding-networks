@@ -85,7 +85,7 @@ module.exports = (startDate, endDate) => {
 
     // Debug purpuses.
     let testUrls = browserHistory.filter((e, i) => {
-      if (i < 1000000) {
+      if (i < 1000) {
         return e
       }
     });
@@ -112,7 +112,7 @@ module.exports = (startDate, endDate) => {
     }
 
     browserHistory.forEach((element, index) => {
-
+      
       let url = element.url.replace(removeHttp, '').split('/')[0];
       let time = element.time.split(' ')[0];
 
