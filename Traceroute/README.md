@@ -16,13 +16,15 @@ If you get a set of options you are good to go. If not, you need to install sqli
 brew install sqlite3
 ```
 
-Then run the application:
+Then run the application prompt:
 
 ```bash
 npm install
 
 npm run start
 ```
+
+This will copy your Chrome browser history and do a traceroute of the urls for the time period you specify. It will then launch a server visualizing this routes using [p5.js](https://github.com/processing/p5.js), [Mappa](https://github.com/cvalenzuela/Mappa) and Mapboxgl
 
 Bam!
 
