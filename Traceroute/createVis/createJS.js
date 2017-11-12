@@ -12,7 +12,6 @@ let options = {
   lng: 0,
   zoom: 2.1,
   style: 'mapbox://styles/cvalenzuela/cj7mv8mtj9m6g2rpaqa09v05a',
-  pitch: 0
 }
 
 let mappa = new Mappa('Mapboxgl', key);
@@ -29,7 +28,7 @@ let newp5 = new p5((p) => {
     routesMap = mappa.tileMap(options);
     routesMap.overlay(canvas);
 
-    routesMap.onChange(drawRoutes);
+    //routesMap.onChange(drawRoutes);
   }
 
   p.draw = () => {

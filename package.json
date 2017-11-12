@@ -1,0 +1,23 @@
+{
+  "name": "work",
+  "version": "1.0.0",
+  "description": "This repo contains assignments for the Understanding Networks class taught by Tom Igoe @ ITP NYU Fall 2017.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cvalenzuela/understanding-networks.git"
+  },
+  "author": "Cristobal Valenzuela <cvalenzuela@nyu.edu> (https://github.com/cvalenzuela)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cvalenzuela/understanding-networks/issues"
+  },
+  "homepage": "https://github.com/cvalenzuela/understanding-networks#readme",
+  "dependencies": {
+    "express": "4.16.2",
+    "twilio": "3.9.1"
+  }
+}

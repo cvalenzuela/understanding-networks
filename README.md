@@ -4,3 +4,4 @@ This repo contains assignments for the Understanding Networks class taught by To
 
 - [BallDropGame](/BallDropGame)
 - [Traceroute](/Traceroute)
+- [Packets](/Packets)
