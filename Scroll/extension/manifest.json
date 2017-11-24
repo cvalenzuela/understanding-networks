@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Scroller",
+  "version": "0.1",
+  "permissions": ["http://jas920.itp.io/*", "https://jas920.itp.io/*"],
+  "background": {
+    "persistent": true,
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["jquery-3.2.1.min.js", "content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icon.png"
+  }
+}
